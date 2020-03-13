@@ -15,3 +15,6 @@ class CalculatorTest(TestCase):
 
     def test_sum_concatenated_numbers(self):
         self.assertEqual(Calculator().sum("1,3"), 4, "Numbers concatenated by comma")
+
+    def test_sum_more_concatenated_numbers(self):
+        self.assertEqual(Calculator().sum("1,2,3,4"), 10, "More numbers concatenated by comma")
