@@ -18,3 +18,6 @@ class CalculatorTest(TestCase):
 
     def test_sum_more_concatenated_numbers(self):
         self.assertEqual(Calculator().sum("1,2,3,4"), 10, "More numbers concatenated by comma")
+
+    def test_sum_numbers_separated_by_colon(self):
+        self.assertEqual(Calculator().sum("5:6&7:8&9"), 35, "Numbers separated by colons and ampersand")
