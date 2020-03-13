@@ -5,4 +5,8 @@ class Calculator:
         elif not(',' in string):
             return int(string)
         else:
-            return int(string[0]) + int(string[2])
+            numbers = string.split(",")
+            total = 0
+            for number in numbers:
+                total += int(number)
+            return total
